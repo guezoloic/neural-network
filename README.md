@@ -1,4 +1,4 @@
-<h1 align="center">Game of Life</h1>
+<h1 align="center">Neural Network</h1>
 
 <p align="center">
     <strong>Learn how to build and train a neural network in Python from scratch.</strong><br/>
@@ -21,7 +21,19 @@ The goal of this project is to:
 - Implement all components of a neural network (no external libraries).
 - Train the network to map 8-bit binary inputs to decimal values (from 0 to 255).
 
-## Prerequis 
+## Prerequisites
+Make sure that a python3.x is installed on your machine:  
+  ```bash
+  python3 --version
+  ```
+
+## Installation
+Clone and run the project locally:
+  ```bash
+  git clone https://github.com/guezoloic/NeuralNetwork.git
+  cd NeuralNetwork
+  python3 main.py
+  ```
 
 ## Links
 - [Sigmoid derivation function](res/sigmoid.png)
