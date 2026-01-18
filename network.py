@@ -77,12 +77,14 @@ class Neuron:
     def __repr__(self) -> str:
         jmp: int = int(math.sqrt(self._input_size))
         text: list[str] = []
-
+        
         for i in range(0, self._input_size, jmp):
             line: str = str.join("", str(self._weight[i: (i + jmp)]))
             text.append(line)
 
-        return f"weight:\n{str.join("\n", text)}\nbias: {self._bias}"
+        return "weight:\n" + str.join("\n", text) + f"\nbias: {self._bias}"
+
+Neuron(10)
 
 # # neuron class
 # class Neuron:
