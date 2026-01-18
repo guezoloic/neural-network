@@ -1,13 +1,12 @@
 import math
 import random
 
-# transform all numbers between 0 and 1
-def sigmoid(x):
+def sigmoid(x: float) -> float:
     return 1 / (1 + math.exp(-x))
 
-# sigmoid's derivation
-def sigmoid_deriv(x): 
-    y = sigmoid(x)
+
+def sigmoid_deriv(x: float) -> float:
+    y: float = sigmoid(x)
     return y * (1 - y)
 
 # neuron class
